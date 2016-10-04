@@ -34,7 +34,7 @@ Student.prototype.watchTV = function() {
 };
 
 var vlada = new Worker({
-    name: 'vlada'
+    name: 'vlada',
     profession: 'nurse'
 });
 var olga = new Worker({
@@ -50,13 +50,13 @@ var jack = new Student({
     age: 26
 });
 
-var show = function() {
+var showObj = function() {
     for (var i = 0; i < arguments.length; i++) {
-        console.log('---------' + arguments[i].name + ':');
+        console.log('\n---------' + arguments[i].name + '---------');
         for (var key in arguments[i]) {
             console.log(key + ': ' + arguments[i][key]);
         }
     }
 };
 
-show(vlada, olga, zoe, jack);
+showObj(vlada, olga, zoe, jack);

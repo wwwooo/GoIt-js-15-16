@@ -8,21 +8,22 @@ form {
     position: fixed;
     top: 0;
     left: 0;
+    padding: 10px 0;
     width: 960px;
-    gi      height: 50px;
     background: rgba(255, 255, 255, .7);
 }
 
 .logo {
-    margin: 0 20px 0;
+    margin: 0 20px;
     text-decoration: none;
     text-transform: lowercase;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 
 h1 {
     display: inline-block;
-    font-size: 35px;
+    font-size: 34px;
+    line-height: 34px;
     color: rgb(0, 122, 221);
 }
 
@@ -33,24 +34,28 @@ h1 {
     vertical-align: middle;
     border-radius: 5px;
     border: 2px solid rgb(0, 122, 221);
+    outline: none;
     color: #555;
 }
 
 #search-btn {
     margin-left: -15px;
-    background: rgb(0, 122, 221);
-    border: none;
-    color: #fff;
-    font-size: 25px;
-    line-height: 25px;
+    padding: 0 5px;
     height: 34px;
     vertical-align: middle;
+    border: none;
     border-radius: 10px;
+    font-size: 25px;
+    line-height: 25px;
+    outline: none;
+    color: #fff;
+    background: rgb(0, 122, 221);
     cursor: pointer;
 }
+
 #content {
     width: 960px;
-    margin: 50px auto;
+    margin: 60px auto;
     -moz-column-count: 4;
     -moz-column-gap: 5px;
     -webkit-column-count:4;
@@ -62,4 +67,3 @@ h1 {
 .content__img {
     width: 100%;
 }
-
